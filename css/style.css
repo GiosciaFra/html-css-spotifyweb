@@ -11,7 +11,7 @@ body {
 .explorer {
     display: flex;
 
-    
+    height: calc(100vh - 90px);
 }
 
 aside {
@@ -19,4 +19,93 @@ aside {
     /* test */
     width: 230px;
     height: 100%;
+}
+
+main {
+    background-color: #183d1d;
+    /* test */
+
+    width: calc(100% - 230px);
+
+    overflow-y: auto;
+
+    background-color: #141922;
+    color: white;
+
+    padding: 90px 20px 20px;
+
+}
+
+.upgrade {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: calc(100% - 230px);
+    height: 90px;
+
+    padding: 20px;
+
+    text-align: right;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 16px;
+
+    list-style-type: none;
+
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.album {
+    width: calc(100% / 6 - 16px / 6 * 5);
+    max-width: 200px;
+}
+
+.album .cover {
+    margin-bottom: 16px;
+}
+
+.album .cover img {
+    width: 100%;
+}
+
+.album .text {
+    text-align: center;
+}
+
+.album .text .title {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+
+}
+
+footer {
+    background-color: #08bb2f;
+    /* test */
+
+    height: 90px;
 }
