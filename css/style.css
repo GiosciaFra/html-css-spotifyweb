@@ -270,10 +270,12 @@ main {
     margin-bottom: 10px;
 
 }
+/* fine main */
 
 footer {
-    background-color: #08bb2f;
-    /* test */
+
+    background-color: #282828;
+    color: white;    
 
     height: 90px;
 }
@@ -292,7 +294,7 @@ footer {
 
 
 @media screen and (max-width: 768px) {
-    
+
     .selector .album {
         width: calc(100% / 2 - 16px / 2);
     }
