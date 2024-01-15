@@ -89,6 +89,11 @@ aside button span {
     height: 20px;
 }
 
+.menu .highlight {
+    border-left: 3px solid #bfff31;
+    padding-right: 20px;
+}
+
 .playlist {
     overflow-y: hidden ;
 }
@@ -124,7 +129,7 @@ aside button span {
 }
 
 .playlist-name li {
-    font-size: 14px;
+    font-size: 11px;
 }
 
 .playlist button .fa-solid {
@@ -250,6 +255,15 @@ main .upgrade button {
     font-weight: bold;
 }
 
+.categories hr {
+   
+    border:2px solid #bfff31;
+
+    width: 50%;
+    margin-left: 21px;
+    margin-top: 3px;
+}
+
 .selector {
     display: flex;
     flex-wrap: wrap;
@@ -279,6 +293,20 @@ main .upgrade button {
     margin-bottom: 10px;
 
 }
+
+h1 {
+    color: white;
+
+    font-size: 22px;
+
+    padding: 20px 0;
+    padding-top: 80px;
+}
+
+p {
+    color: #b5b7be;
+    padding-bottom: 30px;
+}
 /* fine main */
 
 footer {
@@ -306,19 +334,18 @@ footer {
     padding: 20px 10px;
 }
 
-.tune {
-    height: 50%;
-    width: 50%;
-}
-
 .tune-title{
     padding-left: 10px;
     font-size: 14px;
 }
 
- /* .tune img {
+.tune {
+    height: 50px;
+    width: 50px;
+}
+ .tune img {
     width: 100%;
-}  */
+} 
 
 .item {
     display: flex;
@@ -485,6 +512,78 @@ footer {
         width: calc(100% - 50px);
     }
 
+    .tune {
+        width: 20px;
+        height: 20px;
+    }
+
+    .tune-title {
+        width: 65px;
+        font-size: 10px;
+        flex-wrap: wrap;
+        padding-left: 10px;
+    }
+
+    .tune-title strong {
+        font-size: 12px;
+    }
+
+    .item {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 4px;
+    }
+
+    .player-mid {
+        width: 20vw;
+    }
+
+    .functions {
+        font-size: 16px;
+        gap: 9px;
+    }
+
+    .fa-circle-play {
+        font-size: 20px;
+    }
+
+    .progress div {
+        font-size: 8px;
+        vertical-align: middle;
+    }
+
+    .bar {
+        margin-top: 10px;
+    }
+
+    .player-right {
+        display: flex;
+        gap: 8px;
+    }
+
+    .player-right i {
+        font-size: 10px;
+    }
+
+    .volume {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        width: 4px;
+        height: 8vh;
+
+        margin-left: 10px;
+
+        background-color: #5a5a5a;
+    }
+
+    .volume div {
+        width: 100%;
+        height: 1.5vh;
+    }
+    
 
     
 }
