@@ -292,7 +292,50 @@ footer {
 
 
 @media screen and (max-width: 768px) {
+    
     .selector .album {
         width: calc(100% / 2 - 16px / 2);
     }
+}
+
+@media screen  and (max-width: 576px) {
+
+    .logo .big {
+        display: none;
+    }
+    
+
+    .logo .small {
+        display: inline-block;
+        width: 28px;
+    }
+
+    aside {
+        width: 50px;
+        padding: 10px;
+    }
+
+    aside button,
+    aside a {
+        flex-direction: column;
+    }
+
+    /* elementi nascosti */
+
+    aside button span, aside a span, aside hr, .playlist {
+        display: none;
+    }
+
+    aside .bottom-side {
+        padding-bottom: 0;
+    }
+
+    main {
+        width: calc(100% - 50px);
+    }
+
+    main .upgrade {
+        width: calc(100% - 50px);
+    }
+
 }
