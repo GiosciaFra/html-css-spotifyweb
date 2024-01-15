@@ -15,22 +15,52 @@ body {
 }
 
 aside {
-    background-color: #1d9b38;
-    /* test */
+    background-color: black;
     width: 230px;
     height: 100%;
 
     display: flex;
     flex-direction: column;
-
     justify-content: space-between;
+
+    color: #a3a3a3;
+    font-weight: bold;
+    padding: 20px 20px 0;
+
     overflow-y: auto;
     overflow-x: hidden;
 }
 
+aside button {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+aside button span {
+    font-weight: bold;
+}
+
+.top-side {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    overflow: hidden;
+
+}
+
+.logo img {
+    width: 135px;
+}
+
+.logo .small {
+    display: none;
+}
+
+
+
 .logo {
-    background-color: chocolate;
-    /* test */
     height: 90px;
     width: 230px;
 }
@@ -38,48 +68,127 @@ aside {
 .menu {
     display: flex;
     flex-direction: column;
-    gap: 22px;
-    padding-top: 20px;
-    padding-left: 10px;
+    gap: 14px;
+    
     list-style-type: none;
 }
 
-.playlist h2 {
-    padding: 40px 10px;
+.menu a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+
+    color: inherit;
 }
 
-.create-playlists, .playlist-name {
+.menu img {
+    height: 20px;
+}
+
+.playlist {
+    overflow-y: hidden ;
+}
+/* .create-playlists, .playlist-name {
     display: flex;
     align-items: center;
     padding-left: 10px;
     padding-bottom: 20px;
     
+} */
+
+.playlist h2 {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+
+    margin-bottom: 14px;
+}
+
+.playlist button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 22px;
 }
 
 .playlist .playlist-name {
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+
     list-style-type: none;
+
     overflow-y: auto;
-    overflow-x: hidden;
-    height: 250px;
-    line-height: 40px;
-    padding-left: 10px;
+
+    gap: 12px;
+    
+     max-height: calc(100% - 87px);
 }
 
-.plus {
+.playlist button .fa-solid {
     display: inline-block;
-    width: 60px;
-    height: 60px;
-    background-color: chocolate;
+
+    background-color: #a3a3a3;
+    color: black;
+
+    padding: 9px 10px 11px;
+
+    font-size: 17px;
 }
+
 
 .bottom-side {
-    padding-top: 250px;
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 8px;
+    padding-top: 12px;
 }
 
+.bottom-side button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
+.bottom-side .install-app {
+    margin-bottom: 10px;
+}
+
+.bottom-side .install-app img {
+    height: 12px;
+}
+
+.bottom-side hr {
+    margin-bottom: 14px;
+}
+
+.bottom-side .profile-button {
+    font-size: 14px;
+}
+
+.bottom-side .profile-button span {
+    font-weight: bold;
+}
+
+.bottom-side .profile-button img {
+    width: 25px;
+    height: 25px;
+
+    object-fit: cover;
+    object-position: top;
+
+    background-color: #808080;
+
+    border-radius: 50%;
+
+}
+
+/* fine aside */
 main {
     background-color: #183d1d;
     /* test */
